@@ -1,5 +1,30 @@
-# desrv-pdk-example
-Example plugin for DESrv using PDK
+# DESrv example plugin (PDK)
+Example plugin for DESrv using PDK.
+
+* [**How to use this temaplate**](#creating-plugin-from-a-scratch)
+* [**How to create extension from a scratch**](#template-usage)
+
+## Prerequesties
+
+* [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download)
+* [DESrv](https://github.com/Blusutils/DESrv/releases/latest)
+* Visual Studio 2022 (17) (optioal, but recommended)
+
+## Template usage
+0. Use this template repo through GitHub (OPTIONAL AND NOT REQUIRED)
+1. Clone template:
+```powershell
+# replace to link to your fork if you made it
+git clone https://github.com/Blusutils/desrv-pdk-example.git
+```
+2. Replace reference to PDK from local DLL to downloaded with DESrv
+3. Edit namecpace, class names and values of ID and so on in `des-pdk-example/Class1.cs`
+4. Write your plugin
+5. Build project from VS or CLI:
+```powershell
+dotnet build
+```
+6. Put out extension to `extensions` folder in DESrv directory.
 
 ## Creating plugin from a scratch
 
@@ -67,8 +92,9 @@ namespace DESPDKExamples1 {
     }
 }
 ```
+    Don't forget to implement your plugin features too.
 
-5. Build project:
+5. Build project from VS or CLI:
 ```powershell
 dotnet build
 ```
