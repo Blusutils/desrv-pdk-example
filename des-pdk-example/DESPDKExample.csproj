@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Reference Include="PDK">
-      <HintPath>PDK.dll</HintPath>
+      <HintPath>DESrv.PDK.dll</HintPath>
     </Reference>
   </ItemGroup>
 
